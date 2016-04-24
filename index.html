@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <title></title>
+
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="views/assets/css/main.css">
+        <link rel="stylesheet" href="views/assets/css/bootstrap.css">
+
+        <!-- scripts -->
+        <script src="views/assets/js/jquery.min.js"></script>
+        <script src="views/assets/js/bootstrap.js"></script>
+        <!-- Angular  -->
+
+        <script src="views/assets/js/angular.js"></script>
+        <script src="views/assets/js/angular-route.js"></script>
+
+        <script type="text/javascript" src="controllers/app.js"></script>
+        <script type="text/javascript" src="controllers/route.js"></script>
+        <script type="text/javascript" src="controllers/controllers.js"></script>
+
+    </head>
+
+    
+    <body ng-app="ToDo">
+ 
+    <div ng-include="'hed.html'"></div>
+
+    <div id="ng-view" ng-view>        
+    </div>
+    	
+       
+    </body>
+</html>

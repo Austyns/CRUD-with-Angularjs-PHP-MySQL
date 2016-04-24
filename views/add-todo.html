@@ -1,0 +1,24 @@
+<div class="container">
+
+<form class="form-horizontal" method="POST" ng-submit="AddTodo()">
+    <div class="form-group">
+             <label> Task Name </label>
+                <div class="controls">
+                   <input type="text" class="form-control"  name="" ng-model="task.task_name"  />
+        	  <span class="help-inline"  style="color:red;" ng-show="errortask_name">{{errortask_name}}</span>
+                  </div>
+       </div>
+
+    <div class="form-group">
+             <label> Due Date </label>
+                <div class="controls">
+                   <input type="text" class="form-control"  name="" ng-model="task.due_date"  />
+        		  <span class="help-inline"  style="color:red;" ng-show="errordue_date">{{errordue_date}}</span>
+                  </div>
+       </div>
+       <input type="submit" value="Add" class="btn btn-primary">
+
+</form> 
+
+
+</div>

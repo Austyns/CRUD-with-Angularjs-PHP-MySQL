@@ -1,0 +1,30 @@
+ 
+<div class="modal fade"  ng-repeat="(i, key) in  todos.td track by $index" id="d{{key.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"> Delete Task  </h4>
+      </div>
+      <div class="modal-body">
+      <div class="container">
+        <h3> Delete <b> {{key.name_task}} <b></h3><br>
+        <form method="DELETE" ng-submit="">
+            <input type="hidden" name="" data-ng-model="key.id" />
+            <input type="submit" ng-click="DeleteTask(key.id)" value="Change Status" class="btn btn-success">              
+             <button type="button" class="btn btn-danger" data-dismiss="modal">Cancil</button>
+          </form>
+
+    
+          <!-- form end -->
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>    
+
+
